@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    font-family: Georgia, serif;
+    transition: all .3s ease-in-out;
+    box-sizing: border-box;
+    color: #513600;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+nav {
+    justify-content: space-between;
+    box-sizing: content-box;
+    height: max-content;
+    position: relative;
+    overflow: visible;
+    margin: 0 auto;
+    display: flex;
+    
+    background-color: #F9F3E3;
+    border-radius: 1cqw;
+    padding: 1cqw 2cqw;
+    width: 92vw;
+    z-index: 1;
+    top: 2cqw;
+
+    .logo-con {
+        height: max-content;
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+
+        .logo {
+            height: 4cqw;
+        }
+
+        .logo-name {
+            font-weight: 400;
+
+            margin: auto 1cqw;
+            font-size: 2cqw;
+
+        }
+    }
+
+    .buttons-con {
+        margin: auto 2cqw;
+        display: flex;
+        gap: 3cqw;
+
+        .nav-buttons {
+            font-family: "Figtree", sans-serif;
+            text-decoration: none;
+            font-size: 1.2cqw;
+            scale: 1;
+        }
+
+        .nav-buttons::before {
+            content: "";
+            width: 0%;
+            position: absolute;
+            bottom: -.5cqw;
+            border-bottom: solid .2cqw #513600; 
+            transition: width .2s ease-in-out;
+        }
+
+        .nav-buttons:hover::before {
+            width: 100%;
+        }
+
+        .nav-buttons:hover {
+            scale: 1.1;
+        }
+    }
+}
+
+.hero-text {
+    width: 95vw;
+    margin: 5cqw auto;
+
+    h1 {
+        font-family: "Figtree", sans-serif;
+        width: max-content;
+
+        text-shadow: 0 4px 10px #513600;
+        letter-spacing: 0.03em;
+        font-size: 3.5cqw;
+        font-weight: 750;
+        color: #F9F3E3;
+        
+    }
+}
+
+.promo-banner {
+    width: max-content;
+    position: relative;
+    margin: 10cqw auto;
+
+    outline: .3cqw dotted #6B4F1C;
+    background-color: #F9F3E3;
+    border-radius: .5cqw;
+    padding: 2.5cqw 5cqw;
+    margin-top: 20cqw;
+    box-shadow:
+    0 8px 12px 6px rgba(0, 0, 0, 0.15),
+    0 4px 4px 0 rgba(0, 0, 0, 0.3);
+
+    h1 {
+        animation: flash 5s ease-in-out infinite;
+        font-family: "Figtree", sans-serif;
+        -webkit-text-stroke: .15cqw #513600;
+        width: max-content;
+        text-align: center;
+
+        letter-spacing: -.25cqw;
+        font-size: 4.5cqw;
+        font-weight: 800;
+    }
+
+    p {
+        font-family: "Figtree", sans-serif;
+        width: max-content;
+        margin: 0 auto;
+
+        font-weight: 500;
+        font-size: 3.5cqw;
+    }
+
+    .beans {
+        position: absolute;
+        left: 2cqw;
+        top: -3cqw;
+        width: 5.5cqw;
+    }
+}
+
+.menu-text {
+    font-family: "Figtree", sans-serif;
+    width: max-content;
+    font-weight: 800;
+    margin: 3cqw auto;
+}
+
+.background {
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+
+    img {
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 100%);
+        object-fit: cover;
+        height: 70vw;
+        width: 100%;
+        object-position: 50% 100%;
+    }
+}
+
+.item-con {
+    width: max-content;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    display: flex;
+    gap: 1cqw;
+
+    .item-box {
+        padding: 1.5cqw 1.5cqw 0cqw 1.5cqw;
+        border: .2cqw solid #513600;
+        background-color: #F9F3E3;
+        border-radius: .5cqw;
+        box-shadow:
+        0 8px 12px 6px rgba(0, 0, 0, 0.15),
+        0 4px 4px 0 rgba(0, 0, 0, 0.3);
+        
+        height: max-content;
+        cursor: pointer;
+        scale: 1;
+
+        .item {
+            border: .2cqw solid #513600;
+            border-radius: .5cqw;
+            width: 15cqw;
+        }
+
+        .item-name {
+            font-family: "Figtree", sans-serif;
+            text-align: center;
+            font-size: 1.5cqw;
+            font-weight: 700;
+            padding: .5cqw 0;
+        }
+    }
+
+    .item-box:hover {
+        scale: 1.05;
+    }
+}
+
+#right-branch {
+    position: absolute;
+    left: -2cqw;
+    height: 3cqw;
+    top: 1cqw;
+    overflow-x: visible;
+}
+
+#left-branch {
+    position: absolute;
+    right: -2cqw;
+    height: 3cqw;
+    rotate: 180deg;
+    bottom: 0;
+    overflow-x: visible;
+}
+
+section {
+    height: 100vh;
+}
+
+@keyframes flash {
+    0%, 100% {
+        color: #513600;
+    }
+    50% {
+        color: #D4A373;
+    }
+}
