@@ -13,15 +13,15 @@
     <nav>
       <div class="logo-con">
         <img src="/assets/logoBR.png" class="logo" />
-        <p class="logo-name"><span class="bold">Whipping </span>Brew</p>
+        <p id="home" class="logo-name"><span class="bold">Whipping </span>Brew</p>
       </div>
 
         <img src="assets/vanilla.png" id="right-branch"></img>
         <img src="assets/vanilla.png" id="left-branch"></img>
 
       <div class="buttons-con">
-        <a href="" class="nav-buttons">Home</a>
-        <a href="" class="nav-buttons">Menu</a>
+        <a href="#home" class="nav-buttons">Home</a>
+        <a href="#menu" class="nav-buttons">Menu</a>
         <a href="" class="nav-buttons">Events</a>
       </div>
     </nav>
@@ -37,26 +37,114 @@
       <p>Double the whip, double the sip.</p>
     </div>
 
-    <h1 class="menu-text">Our Menu</h1>
-
+    <h1 id="menu" class="menu-text">Our Menu</h1>
+    
     <div class="item-con">
-      <div class="item-box">
+      <!--COFFEE -->
+      <div class="item-box coffee">
         <img src="assets/whipped_latte.png" alt="" class="item">
         <p class="item-name">Whipped Latte</p>
       </div>
 
-      <div class="item-box">
+      <div class="item-box coffee">
         <img src="assets/mocha_bliss.png" alt="" class="item">
         <p class="item-name">Mocha Bliss</p>
       </div>
 
-      <div class="item-box">
+      <div class="item-box coffee">
         <img src="assets/caramel_whipccino.png" alt="" class="item">
         <p class="item-name">Caramel Whippccino</p>
       </div>
+
+      <!-- NON-COFFEE -->
+      <div class="item-box non-coffee">
+        <img src="assets/choco_dream.png" alt="" class="item">
+        <p class="item-name">Choco Dream</p>
+      </div>
+
+      <div class="item-box non-coffee">
+        <img src="assets/berry_bliss_shake.png" alt="" class="item">
+        <p class="item-name">Berry Bliss Shake</p>
+      </div>
+
+      <div class="item-box non-coffee">
+        <img src="assets/matcha_cloud.png" alt="" class="item">
+        <p class="item-name">Matcha Cloud</p>
+      </div>
+      <!-- PASTRIES -->
+      <div class="item-box pastries">
+        <img src="assets/whip-top_brownie.png" alt="" class="item">
+        <p class="item-name">Whip-top Brownie</p>
+      </div>
+
+      <div class="item-box pastries">
+        <img src="assets/strawberry_shortcake.png" alt="" class="item">
+        <p class="item-name">Strawvberry Shortcake</p>
+      </div>
+
+      <div class="item-box pastries">
+        <img src="assets/cream_puffs.png" alt="" class="item">
+        <p class="item-name">Cream Puffs</p>
+      </div>
+
+      
     </div>
-    <section></section>
-    <section></section>
-    <section></section>
+    <div class="choices">
+      <a data-category="coffee">Coffee</a>
+      <a data-category="non-coffee">Non-Coffee</a>
+      <a data-category="pastries">Pastries</a>
+    </div>
+
+    <div class="location-con">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.9743228762513!2d121.13057321110196!3d14.543461085877528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c6fc44949629%3A0x3db75dee0790ea6b!2sLemon%2C%20Taytay%2C%201920%20Rizal!5e0!3m2!1sen!2sph!4v1757833450121!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="contacts">
+        <div class="contact-way">
+          <div class="icon">
+            <img src="assets/map.png" alt="">
+          </div>
+          <div class="contact-deets">
+            <h1>Address</h1>
+            <p>Lemon St, Taytay, Rizal</p>
+          </div>
+        </div>
+
+        <div class="contact-way">
+          <div class="icon">
+            <img src="assets/mail.png" alt="">
+          </div>
+          <div class="contact-deets">
+            <h1>Email</h1>
+            <p>whip.brew@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-way">
+          <div class="icon">
+            <img src="assets/phone.png" alt="">
+          </div>
+          <div class="contact-deets">
+            <h1>Phone</h1>
+            <p>1-947-WHIPNOW</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer-logo">
+        <img src="assets/logoW.png" alt="">
+        <p class="logo-name"><span class="bold">Whipping </span>Brew</p>
+      </div>
+
+      <div class="nav">
+        <a href="#home" class="nav-buttons">Home</a>
+        <a href="#menu" class="nav-buttons">Menu</a>
+        <a href="" class="nav-buttons">Events</a>
+      </div>
+
+      <p>© 2025 Whipping Brew | All Rights Reserved</p>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
